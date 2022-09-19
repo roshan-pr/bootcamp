@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21392e23-6530-4f64-9a0b-9a6dde397112" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment5/Ball.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment5/Store.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/com/tw/step8/assignment5/StoreTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/assignment5/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment5/Store.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/tw/step8/assignment5/StoreTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tw/step8/assignment5/StoreTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +70,23 @@
       <recent name="com.tw.step8.toss" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StoreTest.shouldStoreABall">
+  <component name="RunManager" selected="JUnit.BagTest.shouldStoreABall">
+    <configuration name="BagTest.shouldStoreABall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tw.step8.assignment5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tw.step8.assignment5" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment5.BagTest" />
+      <option name="METHOD_NAME" value="shouldStoreABall" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ParkingLotTest.shouldNotifyObserversWhenParkingLotIsEightyPercent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
@@ -121,22 +135,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StoreTest.shouldStoreABall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bootcamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tw.step8.assignment5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tw.step8.assignment5" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment5.StoreTest" />
-      <option name="METHOD_NAME" value="shouldStoreABall" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="com.tw.step8.assignment4 in bootcamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
@@ -153,7 +151,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StoreTest.shouldStoreABall" />
+        <item itemvalue="JUnit.BagTest.shouldStoreABall" />
         <item itemvalue="JUnit.com.tw.step8.assignment4 in bootcamp" />
         <item itemvalue="JUnit.ParkingLotTest.shouldNotifyObserversWhenParkingLotIsFull" />
         <item itemvalue="JUnit.ParkingLotTest.shouldNotifyObserversWhenParkingLotIsEightyPercent" />
