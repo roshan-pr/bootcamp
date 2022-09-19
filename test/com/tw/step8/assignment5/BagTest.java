@@ -28,10 +28,10 @@ class BagTest {
     Bag bag = Bag.create();
 
     bag.add(new Ball("ball-1", Color.GREEN));
-    bag.add(new Ball("ball-1", Color.GREEN));
-    bag.add(new Ball("ball-1", Color.GREEN));
+    bag.add(new Ball("ball-2", Color.GREEN));
+    bag.add(new Ball("ball-3", Color.GREEN));
 
-    assertFalse(bag.add(new Ball("ball-1", Color.GREEN)));
+    assertFalse(bag.add(new Ball("ball-4", Color.GREEN)));
   }
 
   @Test
@@ -46,8 +46,9 @@ class BagTest {
     Bag bag = Bag.create();
 
     bag.add(new Ball("ball-1", Color.GREEN));
-    bag.add(new Ball("ball-3", Color.RED));
-    assertTrue(bag.add(new Ball("ball-4", Color.RED)));
+    bag.add(new Ball("ball-2", Color.RED));
+
+    assertTrue(bag.add(new Ball("ball-3", Color.RED)));
   }
 
   @Test
@@ -57,6 +58,7 @@ class BagTest {
     bag.add(new Ball("ball-1", Color.GREEN));
     bag.add(new Ball("ball-2", Color.RED));
     bag.add(new Ball("ball-3", Color.RED));
+
     assertFalse(bag.add(new Ball("ball-4", Color.RED)));
   }
 
@@ -65,6 +67,7 @@ class BagTest {
     Bag bag = Bag.create();
 
     bag.add(new Ball("ball-1", Color.GREEN));
+
     assertFalse(bag.add(new Ball("ball-2", Color.YELLOW)));
   }
 
@@ -73,7 +76,40 @@ class BagTest {
     Bag bag = Bag.create();
 
     bag.add(new Ball("ball-1", Color.GREEN));
-    bag.add(new Ball("ball-1", Color.RED));
-    assertTrue(bag.add(new Ball("ball-2", Color.YELLOW)));
+    bag.add(new Ball("ball-2", Color.RED));
+
+    assertTrue(bag.add(new Ball("ball-3", Color.YELLOW)));
+  }
+
+  @Test
+  void shouldAddBlueBallIfBlackBallIsAbsent() {
+    Bag bag = Bag.create();
+
+    assertTrue(bag.add(new Ball("ball-1", Color.BLUE)));
+  }
+
+  @Test
+  void shouldNotAddBlueBallIfBlackBallIsPresent() {
+    Bag bag = Bag.create();
+
+    bag.add(new Ball("ball-1", Color.BLACK));
+
+    assertFalse(bag.add(new Ball("ball-2", Color.BLUE)));
+  }
+
+  @Test
+  void shouldAddBlackBallIfBlueBallIsAbsent() {
+    Bag bag = Bag.create();
+
+    assertTrue(bag.add(new Ball("ball-1", Color.BLACK)));
+  }
+
+  @Test
+  void shouldNotAddBlackBallIfBlueBallPresent() {
+    Bag bag = Bag.create();
+
+    bag.add(new Ball("ball-1", Color.BLUE));
+
+    assertFalse(bag.add(new Ball("ball-2", Color.BLACK)));
   }
 }

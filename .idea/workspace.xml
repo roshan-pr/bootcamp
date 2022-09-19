@@ -4,6 +4,7 @@
     <list default="true" id="21392e23-6530-4f64-9a0b-9a6dde397112" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tw/step8/assignment5/Bag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment5/Bag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/assignment5/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment5/Ball.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tw/step8/assignment5/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment5/Color.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/com/tw/step8/assignment5/BagTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tw/step8/assignment5/BagTest.java" afterDir="false" />
     </list>
@@ -72,7 +73,7 @@
       <recent name="com.tw.step8.toss" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BagTest.shouldAddYellowBallWhenCapacityIsLessThanFortyPercentOfCurrentCapacity">
+  <component name="RunManager" selected="JUnit.BagTest">
     <configuration name="BagTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
@@ -88,7 +89,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BagTest.shouldAddTwoRedBallForOneGreenBall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BagTest.shouldAddBlackBallIfBlueBallIsAbsent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -98,13 +99,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step8.assignment5" />
       <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment5.BagTest" />
-      <option name="METHOD_NAME" value="shouldAddTwoRedBallForOneGreenBall" />
+      <option name="METHOD_NAME" value="shouldAddBlackBallIfBlueBallIsAbsent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BagTest.shouldAddYellowBallWhenCapacityIsLessThanFortyPercentOfCurrentCapacity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BagTest.shouldAddBlueBallIfBlackBallIsAbsent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -114,13 +115,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step8.assignment5" />
       <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment5.BagTest" />
-      <option name="METHOD_NAME" value="shouldAddYellowBallWhenCapacityIsLessThanFortyPercentOfCurrentCapacity" />
+      <option name="METHOD_NAME" value="shouldAddBlueBallIfBlackBallIsAbsent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BagTest.shouldPreventAddingYellowBallMoreThanFortyPercentOfCurrentCapacit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BagTest.shouldNotAddBlackBallIfBlueBallPresent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -130,13 +131,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step8.assignment5" />
       <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment5.BagTest" />
-      <option name="METHOD_NAME" value="shouldPreventAddingYellowBallMoreThanFortyPercentOfCurrentCapacit" />
+      <option name="METHOD_NAME" value="shouldNotAddBlackBallIfBlueBallPresent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BagTest.shouldPreventAddingYellowBallMoreThanFortyPercentOfCurrentCapacity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BagTest.shouldNotAddBlueBallIfBlackBallIsPresent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -146,7 +147,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step8.assignment5" />
       <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment5.BagTest" />
-      <option name="METHOD_NAME" value="shouldPreventAddingYellowBallMoreThanFortyPercentOfCurrentCapacity" />
+      <option name="METHOD_NAME" value="shouldNotAddBlueBallIfBlackBallIsPresent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -154,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BagTest.shouldAddYellowBallWhenCapacityIsLessThanFortyPercentOfCurrentCapacity" />
-        <item itemvalue="JUnit.BagTest.shouldPreventAddingYellowBallMoreThanFortyPercentOfCurrentCapacity" />
-        <item itemvalue="JUnit.BagTest.shouldPreventAddingYellowBallMoreThanFortyPercentOfCurrentCapacit" />
         <item itemvalue="JUnit.BagTest" />
-        <item itemvalue="JUnit.BagTest.shouldAddTwoRedBallForOneGreenBall" />
+        <item itemvalue="JUnit.BagTest.shouldNotAddBlackBallIfBlueBallPresent" />
+        <item itemvalue="JUnit.BagTest.shouldAddBlackBallIfBlueBallIsAbsent" />
+        <item itemvalue="JUnit.BagTest.shouldNotAddBlueBallIfBlackBallIsPresent" />
+        <item itemvalue="JUnit.BagTest.shouldAddBlueBallIfBlackBallIsAbsent" />
       </list>
     </recent_temporary>
   </component>

@@ -9,7 +9,7 @@ public class Ball {
     this.color = color;
   }
 
-  public Color getColor() {
-    return color;
+  public boolean isSameColor(Color color){
+    return this.color == color;
   }
 }
