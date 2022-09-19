@@ -29,14 +29,22 @@ public class Bag {
       return false;
     }
 
+    if (ball.getColor() == Color.YELLOW && !isYellowAllowed()) {
+      return false;
+    }
+
     return this.balls.add(ball);
   }
 
+  private boolean isYellowAllowed() {
+    double ratio = (countOf(Color.YELLOW) + 1.0) / (this.balls.size() + 1.0);
+    return ratio <= 0.4;
+  }
+
   private boolean isRedAllowed() {
-    if (isBagEmpty()) {
-      return false;
-    }
-    long ratio = countOf(Color.RED) / countOf(Color.GREEN);
+    if (isBagEmpty()) return false;
+
+    double ratio = countOf(Color.RED) * 1.0 / countOf(Color.GREEN);
     return ratio < 2.0;
   }
 

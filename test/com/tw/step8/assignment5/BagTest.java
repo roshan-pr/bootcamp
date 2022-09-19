@@ -17,7 +17,7 @@ class BagTest {
     Bag bag = Bag.create();
 
     for (int i = 0; i < 12; i++) {
-      bag.add(new Ball("ball-" + i, Color.NOCOLOR));
+      bag.add(new Ball("ball-" + i, Color.NO_COLOR));
     }
 
     assertFalse(bag.add(new Ball("ball-13", Color.GREEN)));
@@ -58,5 +58,22 @@ class BagTest {
     bag.add(new Ball("ball-2", Color.RED));
     bag.add(new Ball("ball-3", Color.RED));
     assertFalse(bag.add(new Ball("ball-4", Color.RED)));
+  }
+
+  @Test
+  void shouldPreventAddingYellowBallMoreThanFortyPercentOfCurrentCapacity() {
+    Bag bag = Bag.create();
+
+    bag.add(new Ball("ball-1", Color.GREEN));
+    assertFalse(bag.add(new Ball("ball-2", Color.YELLOW)));
+  }
+
+  @Test
+  void shouldAddYellowBallWhenCapacityIsLessThanFortyPercentOfCurrentCapacity() {
+    Bag bag = Bag.create();
+
+    bag.add(new Ball("ball-1", Color.GREEN));
+    bag.add(new Ball("ball-1", Color.RED));
+    assertTrue(bag.add(new Ball("ball-2", Color.YELLOW)));
   }
 }

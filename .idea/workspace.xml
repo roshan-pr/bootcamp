@@ -72,7 +72,7 @@
       <recent name="com.tw.step8.toss" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BagTest.shouldAddTwoRedBallForOneGreenBall">
+  <component name="RunManager" selected="JUnit.BagTest.shouldAddYellowBallWhenCapacityIsLessThanFortyPercentOfCurrentCapacity">
     <configuration name="BagTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
@@ -84,22 +84,6 @@
       <option name="PACKAGE_NAME" value="com.tw.step8.assignment5" />
       <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment5.BagTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BagTest.shouldAddRedBallForOneGreenBall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bootcamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tw.step8.assignment5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tw.step8.assignment5" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment5.BagTest" />
-      <option name="METHOD_NAME" value="shouldAddRedBallForOneGreenBall" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -120,7 +104,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BagTest.shouldPreventAddingRedBallIfNoGreenBalls" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BagTest.shouldAddYellowBallWhenCapacityIsLessThanFortyPercentOfCurrentCapacity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -130,13 +114,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step8.assignment5" />
       <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment5.BagTest" />
-      <option name="METHOD_NAME" value="shouldPreventAddingRedBallIfNoGreenBalls" />
+      <option name="METHOD_NAME" value="shouldAddYellowBallWhenCapacityIsLessThanFortyPercentOfCurrentCapacity" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BagTest.shouldPreventAddingThreeRedBallForTwoGreenBalls" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BagTest.shouldPreventAddingYellowBallMoreThanFortyPercentOfCurrentCapacit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -146,7 +130,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step8.assignment5" />
       <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment5.BagTest" />
-      <option name="METHOD_NAME" value="shouldPreventAddingThreeRedBallForTwoGreenBalls" />
+      <option name="METHOD_NAME" value="shouldPreventAddingYellowBallMoreThanFortyPercentOfCurrentCapacit" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BagTest.shouldPreventAddingYellowBallMoreThanFortyPercentOfCurrentCapacity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tw.step8.assignment5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tw.step8.assignment5" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment5.BagTest" />
+      <option name="METHOD_NAME" value="shouldPreventAddingYellowBallMoreThanFortyPercentOfCurrentCapacity" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -154,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BagTest.shouldAddTwoRedBallForOneGreenBall" />
-        <item itemvalue="JUnit.BagTest.shouldAddRedBallForOneGreenBall" />
+        <item itemvalue="JUnit.BagTest.shouldAddYellowBallWhenCapacityIsLessThanFortyPercentOfCurrentCapacity" />
+        <item itemvalue="JUnit.BagTest.shouldPreventAddingYellowBallMoreThanFortyPercentOfCurrentCapacity" />
+        <item itemvalue="JUnit.BagTest.shouldPreventAddingYellowBallMoreThanFortyPercentOfCurrentCapacit" />
         <item itemvalue="JUnit.BagTest" />
-        <item itemvalue="JUnit.BagTest.shouldPreventAddingThreeRedBallForTwoGreenBalls" />
-        <item itemvalue="JUnit.BagTest.shouldPreventAddingRedBallIfNoGreenBalls" />
+        <item itemvalue="JUnit.BagTest.shouldAddTwoRedBallForOneGreenBall" />
       </list>
     </recent_temporary>
   </component>
