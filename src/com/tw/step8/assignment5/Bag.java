@@ -4,9 +4,10 @@ import java.util.HashSet;
 
 public class Bag {
   private final HashSet<Ball> balls;
+  private final int capacity = 12;
 
   private Bag() {
-    this.balls = new HashSet<>(12);
+    this.balls = new HashSet<>(this.capacity);
   }
 
   public static Bag createStore() {
@@ -14,9 +15,22 @@ public class Bag {
   }
 
   public boolean add(Ball ball) {
-    if (balls.size() >= 12){
+    if (isBagFull()) return false;
+
+    if (isReachedMaxLimit(Color.GREEN, 3)) {
       return false;
     }
-    return balls.add(ball);
+    return this.balls.add(ball);
+  }
+
+  private boolean isBagFull() {
+    return this.balls.size() >= this.capacity;
+  }
+
+  private boolean isReachedMaxLimit(Color color, int maxLimit) {
+    long count = this.balls.stream()
+            .filter(ball -> ball.getColor() == color)
+            .count();
+    return count >= maxLimit;
   }
 }
