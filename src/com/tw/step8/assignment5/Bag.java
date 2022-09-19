@@ -1,5 +1,8 @@
 package com.tw.step8.assignment5;
 
+import com.tw.step8.assignment5.exception.ColorNotAllowedException;
+import com.tw.step8.assignment5.exception.SizeOverflowException;
+
 import java.util.HashSet;
 import java.util.function.Predicate;
 
@@ -18,27 +21,29 @@ public class Bag {
     return new Bag();
   }
 
-  public boolean add(Ball ball) {
-    if (isBagFull()) return false;
+  public boolean add(Ball ball) throws ColorNotAllowedException, SizeOverflowException {
+    if (isBagFull()) {
+      throw new SizeOverflowException();
+    };
 
     if (ball.isSameColor(Color.GREEN) && !isGreenAllowed()) {
-      return false;
+     throw new ColorNotAllowedException(Color.GREEN);
     }
 
     if (ball.isSameColor(Color.RED) && !isRedAllowed()) {
-      return false;
+     throw new ColorNotAllowedException(Color.RED);
     }
 
     if (ball.isSameColor(Color.YELLOW) && !isYellowAllowed()) {
-      return false;
+     throw new ColorNotAllowedException(Color.YELLOW);
     }
 
     if (ball.isSameColor(Color.BLUE) && !isBlueAllowed()) {
-      return false;
+     throw new ColorNotAllowedException(Color.BLUE);
     }
 
     if (ball.isSameColor(Color.BLACK) && !isBlackAllowed()) {
-      return false;
+     throw new ColorNotAllowedException(Color.BLACK);
     }
 
     return this.balls.add(ball);

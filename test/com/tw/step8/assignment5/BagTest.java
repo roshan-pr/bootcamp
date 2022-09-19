@@ -1,48 +1,50 @@
 package com.tw.step8.assignment5;
 
+import com.tw.step8.assignment5.exception.ColorNotAllowedException;
+import com.tw.step8.assignment5.exception.SizeOverflowException;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class BagTest {
   @Test
-  void shouldAddABall() {
+  void shouldAddABall() throws ColorNotAllowedException, SizeOverflowException {
     Bag bag = Bag.create();
 
     assertTrue(bag.add(new Ball("ball-1", Color.GREEN)));
   }
 
   @Test
-  void shouldNotAddMoreThanTwelveBalls() {
+  void shouldNotAddMoreThanTwelveBalls() throws ColorNotAllowedException, SizeOverflowException {
     Bag bag = Bag.create();
 
     for (int i = 0; i < 12; i++) {
       bag.add(new Ball("ball-" + i, Color.NO_COLOR));
     }
 
-    assertFalse(bag.add(new Ball("ball-13", Color.GREEN)));
+    assertThrows(SizeOverflowException.class, () -> bag.add(new Ball("ball-13", Color.GREEN)));
   }
 
   @Test
-  void shouldNotAddMoreThanThreeGreenBalls() {
+  void shouldNotAddMoreThanThreeGreenBalls() throws ColorNotAllowedException, SizeOverflowException {
     Bag bag = Bag.create();
 
     bag.add(new Ball("ball-1", Color.GREEN));
     bag.add(new Ball("ball-2", Color.GREEN));
     bag.add(new Ball("ball-3", Color.GREEN));
 
-    assertFalse(bag.add(new Ball("ball-4", Color.GREEN)));
+    assertThrows(ColorNotAllowedException.class, () -> bag.add(new Ball("ball-4", Color.GREEN)));
   }
 
   @Test
-  void shouldPreventAddingRedBallIfNoGreenBalls() {
+  void shouldPreventAddingRedBallIfNoGreenBalls() throws ColorNotAllowedException {
     Bag bag = Bag.create();
 
-    assertFalse(bag.add(new Ball("ball-1", Color.RED)));
+    assertThrows(ColorNotAllowedException.class, () -> bag.add(new Ball("ball-1", Color.RED)));
   }
 
   @Test
-  void shouldAddTwoRedBallForOneGreenBall() {
+  void shouldAddTwoRedBallForOneGreenBall() throws ColorNotAllowedException, SizeOverflowException {
     Bag bag = Bag.create();
 
     bag.add(new Ball("ball-1", Color.GREEN));
@@ -52,27 +54,27 @@ class BagTest {
   }
 
   @Test
-  void shouldPreventAddingThreeRedBallForTwoGreenBalls() {
+  void shouldPreventAddingThreeRedBallForTwoGreenBalls() throws ColorNotAllowedException, SizeOverflowException {
     Bag bag = Bag.create();
 
     bag.add(new Ball("ball-1", Color.GREEN));
     bag.add(new Ball("ball-2", Color.RED));
     bag.add(new Ball("ball-3", Color.RED));
 
-    assertFalse(bag.add(new Ball("ball-4", Color.RED)));
+    assertThrows(ColorNotAllowedException.class, () -> bag.add(new Ball("ball-4", Color.RED)));
   }
 
   @Test
-  void shouldPreventAddingYellowBallMoreThanFortyPercentOfCurrentCapacity() {
+  void shouldPreventAddingYellowBallMoreThanFortyPercentOfCurrentCapacity() throws ColorNotAllowedException, SizeOverflowException {
     Bag bag = Bag.create();
 
     bag.add(new Ball("ball-1", Color.GREEN));
 
-    assertFalse(bag.add(new Ball("ball-2", Color.YELLOW)));
+    assertThrows(ColorNotAllowedException.class,() -> bag.add(new Ball("ball-2", Color.YELLOW)));
   }
 
   @Test
-  void shouldAddYellowBallWhenCapacityIsLessThanFortyPercentOfCurrentCapacity() {
+  void shouldAddYellowBallWhenCapacityIsLessThanFortyPercentOfCurrentCapacity() throws ColorNotAllowedException, SizeOverflowException {
     Bag bag = Bag.create();
 
     bag.add(new Ball("ball-1", Color.GREEN));
@@ -82,34 +84,34 @@ class BagTest {
   }
 
   @Test
-  void shouldAddBlueBallIfBlackBallIsAbsent() {
+  void shouldAddBlueBallIfBlackBallIsAbsent() throws ColorNotAllowedException, SizeOverflowException {
     Bag bag = Bag.create();
 
     assertTrue(bag.add(new Ball("ball-1", Color.BLUE)));
   }
 
   @Test
-  void shouldNotAddBlueBallIfBlackBallIsPresent() {
+  void shouldNotAddBlueBallIfBlackBallIsPresent() throws ColorNotAllowedException, SizeOverflowException {
     Bag bag = Bag.create();
 
     bag.add(new Ball("ball-1", Color.BLACK));
 
-    assertFalse(bag.add(new Ball("ball-2", Color.BLUE)));
+    assertThrows(ColorNotAllowedException.class,() -> bag.add(new Ball("ball-2", Color.BLUE)));
   }
 
   @Test
-  void shouldAddBlackBallIfBlueBallIsAbsent() {
+  void shouldAddBlackBallIfBlueBallIsAbsent() throws ColorNotAllowedException, SizeOverflowException {
     Bag bag = Bag.create();
 
     assertTrue(bag.add(new Ball("ball-1", Color.BLACK)));
   }
 
   @Test
-  void shouldNotAddBlackBallIfBlueBallPresent() {
+  void shouldNotAddBlackBallIfBlueBallPresent() throws ColorNotAllowedException, SizeOverflowException {
     Bag bag = Bag.create();
 
     bag.add(new Ball("ball-1", Color.BLUE));
 
-    assertFalse(bag.add(new Ball("ball-2", Color.BLACK)));
+    assertThrows(ColorNotAllowedException.class,() -> bag.add(new Ball("ball-2", Color.BLACK)));
   }
 }
