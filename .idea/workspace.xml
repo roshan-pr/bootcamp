@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21392e23-6530-4f64-9a0b-9a6dde397112" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment5/Color.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tw/step8/assignment5/Bag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment5/Bag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/assignment5/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment5/Ball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tw/step8/assignment5/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tw/step8/assignment5/Color.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/com/tw/step8/assignment5/BagTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/tw/step8/assignment5/BagTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,8 +72,8 @@
       <recent name="com.tw.step8.toss" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BagTest.shouldNotAddMoreThanThreeGreenBalls">
-    <configuration name="BagTest.shouldNotAddMoreThanThreeGreenBalls" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BagTest.shouldAddTwoRedBallForOneGreenBall">
+    <configuration name="BagTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -84,13 +83,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step8.assignment5" />
       <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment5.BagTest" />
-      <option name="METHOD_NAME" value="shouldNotAddMoreThanThreeGreenBalls" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BagTest.shouldStoreABall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BagTest.shouldAddRedBallForOneGreenBall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -100,65 +98,67 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step8.assignment5" />
       <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment5.BagTest" />
-      <option name="METHOD_NAME" value="shouldStoreABall" />
+      <option name="METHOD_NAME" value="shouldAddRedBallForOneGreenBall" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParkingLotTest.shouldNotifyObserversWhenParkingLotIsEightyPercent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BagTest.shouldAddTwoRedBallForOneGreenBall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tw.step8.assignment4.*" />
+          <option name="PATTERN" value="com.tw.step8.assignment5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.tw.step8.assignment4" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment4.ParkingLotTest" />
-      <option name="METHOD_NAME" value="shouldNotifyObserversWhenParkingLotIsEightyPercent" />
+      <option name="PACKAGE_NAME" value="com.tw.step8.assignment5" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment5.BagTest" />
+      <option name="METHOD_NAME" value="shouldAddTwoRedBallForOneGreenBall" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParkingLotTest.shouldNotifyObserversWhenParkingLotIsFull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BagTest.shouldPreventAddingRedBallIfNoGreenBalls" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tw.step8.assignment4.*" />
+          <option name="PATTERN" value="com.tw.step8.assignment5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.tw.step8.assignment4" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment4.ParkingLotTest" />
-      <option name="METHOD_NAME" value="shouldNotifyObserversWhenParkingLotIsFull" />
+      <option name="PACKAGE_NAME" value="com.tw.step8.assignment5" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment5.BagTest" />
+      <option name="METHOD_NAME" value="shouldPreventAddingRedBallIfNoGreenBalls" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.tw.step8.assignment4 in bootcamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BagTest.shouldPreventAddingThreeRedBallForTwoGreenBalls" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tw.step8.assignment4.*" />
+          <option name="PATTERN" value="com.tw.step8.assignment5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.tw.step8.assignment4" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="PACKAGE_NAME" value="com.tw.step8.assignment5" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step8.assignment5.BagTest" />
+      <option name="METHOD_NAME" value="shouldPreventAddingThreeRedBallForTwoGreenBalls" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BagTest.shouldNotAddMoreThanThreeGreenBalls" />
-        <item itemvalue="JUnit.BagTest.shouldStoreABall" />
-        <item itemvalue="JUnit.com.tw.step8.assignment4 in bootcamp" />
-        <item itemvalue="JUnit.ParkingLotTest.shouldNotifyObserversWhenParkingLotIsFull" />
-        <item itemvalue="JUnit.ParkingLotTest.shouldNotifyObserversWhenParkingLotIsEightyPercent" />
+        <item itemvalue="JUnit.BagTest.shouldAddTwoRedBallForOneGreenBall" />
+        <item itemvalue="JUnit.BagTest.shouldAddRedBallForOneGreenBall" />
+        <item itemvalue="JUnit.BagTest" />
+        <item itemvalue="JUnit.BagTest.shouldPreventAddingThreeRedBallForTwoGreenBalls" />
+        <item itemvalue="JUnit.BagTest.shouldPreventAddingRedBallIfNoGreenBalls" />
       </list>
     </recent_temporary>
   </component>
@@ -183,16 +183,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/com/tw/step8/assignment5/BagTest.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
